@@ -1,0 +1,4 @@
+localhost ansible_user=aadarsh
+
+[debian11]
+172.16.134.255 ansible_user=aadarsh

@@ -1,0 +1,9 @@
+---
+- name: Pull docker image of ToDoList
+  hosts: all
+  tasks:
+    - name: Pull todolist devops image
+      docker_image:
+        name: aadarsh96/todolistimg
+        source: pull
+...
