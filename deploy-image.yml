@@ -8,6 +8,7 @@
         source: pull
 
 - name: Run Docker Image
+  hosts: all
   tasks:
     - name: deploy todolist docker container
       docker_container:
