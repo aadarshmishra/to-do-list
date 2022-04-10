@@ -1,4 +1,7 @@
 localhost ansible_user=aadarsh
 
 [debian11]
-172.16.134.255 ansible_user=aadarsh
+172.16.134.255 
+ansible_user=aadarsh
+ansible_connection=ssh 
+ansible_ssh_pass=vagrant
