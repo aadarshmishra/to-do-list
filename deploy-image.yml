@@ -6,4 +6,15 @@
       docker_image:
         name: aadarsh96/todolistimg
         source: pull
+
+- name: Run Docker Image
+  tasks:
+    - name: deploy todolist docker container
+      docker_container:
+        image: aadarsh96/todolistimg
+        name: todolistimg
+        state: started
+        auto_remove: true
+        ports:
+          - "3000:3000"
 ...
